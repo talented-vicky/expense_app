@@ -32,9 +32,11 @@ class _NavControlState extends State<NavControl> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.black,
         title: Text(_pages[ind].title),
       ),
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.black,
       body: _pages[ind],
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.lightBlueAccent,

@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Expense tracker App',
-        theme: ThemeData(
-            primarySwatch: Colors.blueGrey, brightness: Brightness.dark),
+        theme: ThemeData(primaryColor: Colors.black, canvasColor: Colors.black),
         home: const NavControl());
   }
 }
