@@ -1,4 +1,4 @@
-import 'package:expense_app/pages/categories.dart';
+import 'package:expense_app/views/categories.dart';
 import 'package:flutter/material.dart';
 
 import 'package:expense_app/utility/title.dart';

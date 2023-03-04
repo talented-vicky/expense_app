@@ -1,10 +1,11 @@
 import 'package:expense_app/utility/title.dart';
 import 'package:flutter/material.dart';
 
-import 'package:expense_app/pages/add.dart';
-import 'package:expense_app/pages/expenses.dart';
-import 'package:expense_app/pages/report.dart';
-import 'package:expense_app/pages/settings.dart';
+import 'package:expense_app/views/add.dart';
+import 'package:expense_app/views/expenses.dart';
+import 'package:expense_app/views/report.dart';
+import 'package:expense_app/views/settings.dart';
+import 'package:expense_app/views/posts.dart';
 
 class NavControl extends StatefulWidget {
   const NavControl({super.key});
@@ -24,6 +25,7 @@ class _NavControlState extends State<NavControl> {
   static const List<TitleWidget> _pages = [
     ExpensePage(),
     ReportPage(),
+    Posts(),
     AddPage(),
     SettingsPage()
   ];
@@ -47,6 +49,8 @@ class _NavControlState extends State<NavControl> {
               label: "Expense", icon: Icon(Icons.money_rounded)),
           BottomNavigationBarItem(
               label: "Report", icon: Icon(Icons.signal_cellular_alt_sharp)),
+          BottomNavigationBarItem(
+              label: "Posts", icon: Icon(Icons.legend_toggle_outlined)),
           BottomNavigationBarItem(
               label: "Add", icon: Icon(Icons.add_circle_outline)),
           BottomNavigationBarItem(
