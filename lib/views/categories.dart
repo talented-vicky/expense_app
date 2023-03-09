@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter/cupertino.dart';
-import 'package:cupertino_icons/cupertino_icons.dart';
 
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../services/remote_services.dart';
+import '../models/posts.dart';
 import 'package:expense_app/utility/title.dart';
 
 class Posts extends TitleWidget {
-  const Posts({super.key}) : super(title: "Post Page");
+  const Posts({super.key}) : super(title: "Daily Posts");
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +21,8 @@ class PostPage extends StatefulWidget {
 }
 
 class _PostPageState extends State<PostPage> {
-  List<PostPage>? posts;
-  bool isLoaded = false;
+  List<DailyPost>? posts;
+  var isLoaded = false;
 
   @override
   void initState() {
@@ -51,10 +52,11 @@ class _PostPageState extends State<PostPage> {
       child: ListView.builder(
           itemCount: posts?.length,
           itemBuilder: (context, index) {
-            return Container(
-              padding: const EdgeInsets.all(8),
-              child: const Text("hey guy"),
+            return Text(
+              posts![index].title,
+              style: const TextStyle(color: Colors.white),
             );
+            // );
           }),
     ));
   }
